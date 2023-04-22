@@ -1,6 +1,5 @@
-const rules =
+const rule =
 {
-  rules: {
     // Descending
     'no-descending-specificity': true,
     // Duplicate
@@ -53,7 +52,7 @@ const rules =
     'at-rule-no-vendor-prefix': true,
     'color-hex-alpha': 'never',
     'color-named': 'never',
-    'color-no-hex': false,
+    'color-no-hex': null,
     'declaration-no-important': true,
     'declaration-property-value-disallowed-list':
     {
@@ -67,7 +66,12 @@ const rules =
     'length-zero-no-unit': true,
     'media-feature-name-no-vendor-prefix': true,
     'property-no-vendor-prefix': true,
-    'selector-no-qualifying-type': ['attribute'],
+    'selector-no-qualifying-type': [
+      true,
+      {
+        ignore: ['attribute']
+      }
+    ],
     'selector-no-vendor-prefix': true,
     'unit-allowed-list': ['rem', '%', 'em', 's'],
     'value-no-vendor-prefix': true,
@@ -86,7 +90,7 @@ const rules =
         ]
       }
     ],
-    'comment-empty-line-before': true,
+    'comment-empty-line-before': "always",
     'custom-property-empty-line-before': 'never',
     'declaration-empty-line-before':
     [
@@ -137,7 +141,6 @@ const rules =
           'Selector should be written in lowercase with hyphens (selector-class-pattern)'
       }
     ]
-  }
 };
 
-module.exports = { rules };
+module.exports = { rule };

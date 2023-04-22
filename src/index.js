@@ -1,9 +1,15 @@
+'use strict';
+
 const { order } = require('./order/order');
-const { rules } = require('./rule/rule');
+const { rule } = require('./rule/rule');
 
 const config =
 {
-  extends: [rules, order]
+  ...order.plugins,
+  rules: {
+    ...rule,
+    ...order.rules
+  }
 };
 
 module.exports = config
