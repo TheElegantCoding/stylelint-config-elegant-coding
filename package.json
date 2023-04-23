@@ -8,7 +8,7 @@
     "stylelint",
     "stylelint-config",
     "stylelint-order",
-    "property order"
+    "order"
   ],
   "homepage": "https://github.com/LuisCoderDev/stylelint_coder_dev",
   "bugs": {
