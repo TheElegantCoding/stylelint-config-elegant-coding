@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-coder-dev",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "My personal stylelint configuration",
   "author": "Luis Monsalve",
   "license": "MIT",
