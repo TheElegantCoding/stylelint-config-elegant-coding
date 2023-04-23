@@ -35,7 +35,7 @@ const rule =
   // Unknown
   'annotation-no-unknown': true,
   'at-rule-no-unknown': true,
-  'declaration-property-value-no-unknown': true,
+  'declaration-property-value-no-unknown': null,
   'function-no-unknown': true,
   'media-feature-name-no-unknown': true,
   'no-unknown-animations': true,
@@ -54,14 +54,6 @@ const rule =
   'color-named': 'never',
   'color-no-hex': null,
   'declaration-no-important': true,
-  'declaration-property-value-disallowed-list':
-    {
-      border: ['none'],
-      'border-top': ['none'],
-      'border-right': ['none'],
-      'border-bottom': ['none'],
-      'border-left': ['none']
-    },
   'function-url-no-scheme-relative': true,
   'length-zero-no-unit': true,
   'media-feature-name-no-vendor-prefix': true,
@@ -73,27 +65,34 @@ const rule =
     }
   ],
   'selector-no-vendor-prefix': true,
-  'unit-allowed-list': ['rem', '%', 'em', 's'],
   'value-no-vendor-prefix': true,
   // Case
   'function-name-case': 'lower',
   'selector-type-case': 'lower',
   'value-keyword-case': 'lower',
   // Empty lines
-  'at-rule-empty-line-before':
-    [
-      'always',
-      {
-        ignore: [
-          'first-nested',
-          'blockless-after-same-name-blockless'
-        ]
-      }
-    ],
-  'comment-empty-line-before': 'always',
+  'rule-empty-line-before': [
+    'always-multi-line',
+    {
+      except: ['first-nested'],
+      ignore: ['after-comment']
+    }
+  ],
+  'comment-empty-line-before': 'never',
   'custom-property-empty-line-before': 'never',
-  'declaration-empty-line-before': 'never',
-  'rule-empty-line-before': 'always-multi-line',
+  'declaration-empty-line-before': [
+    'always',
+    {
+      except: [
+        'after-declaration',
+        'first-nested'
+      ],
+      ignore: [
+        'after-comment',
+        'inside-single-line-block'
+      ]
+    }
+  ],
   'declaration-block-single-line-max-declarations': 1,
   'max-nesting-depth':
     [
@@ -127,7 +126,7 @@ const rule =
   'shorthand-property-no-redundant-values': true,
   'comment-whitespace-inside': 'always',
   'selector-class-pattern': [
-    '^[a-z0-9\\-_]+$',
+    '^[a-z0-9\\-_/]+$',
     {
       message:
           'Selector should be written in lowercase with hyphens (selector-class-pattern)'
