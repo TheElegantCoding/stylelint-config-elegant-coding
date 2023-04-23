@@ -1,5 +1,3 @@
-'use strict';
-
 const { order } = require('./order/order');
 const { rule } = require('./rule/rule');
 
@@ -12,4 +10,4 @@ const config =
   }
 };
 
-module.exports = config
+module.exports = config;

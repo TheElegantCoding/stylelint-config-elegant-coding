@@ -1,5 +1,5 @@
 {
-  "name": "stylelint_coder_dev",
+  "name": "stylelint-config-coder-dev",
   "version": "1.0.4",
   "description": "My personal stylelint configuration",
   "author": "Luis Monsalve",
@@ -34,6 +34,7 @@
     "lint": "eslint --ext .js . --fix"
   },
   "dependencies": {
+    "eslint-config-coder-dev": "^0.0.6",
     "stylelint-order": "^6.0.3"
   },
   "devDependencies": {
