@@ -127,7 +127,7 @@ const rule =
   'shorthand-property-no-redundant-values': true,
   'comment-whitespace-inside': 'always',
   'selector-class-pattern': [
-    '^[a-z0-9\\-]+$',
+    '^[a-z0-9\\-_]+$',
     {
       message:
           'Selector should be written in lowercase with hyphens (selector-class-pattern)'
