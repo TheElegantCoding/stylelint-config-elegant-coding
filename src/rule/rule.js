@@ -92,15 +92,7 @@ const rule =
     ],
   'comment-empty-line-before': 'always',
   'custom-property-empty-line-before': 'never',
-  'declaration-empty-line-before':
-    [
-      'off',
-      {
-        ignore: [
-          'after-declaration'
-        ]
-      }
-    ],
+  'declaration-empty-line-before': 'never',
   'rule-empty-line-before': 'always-multi-line',
   'declaration-block-single-line-max-declarations': 1,
   'max-nesting-depth':
