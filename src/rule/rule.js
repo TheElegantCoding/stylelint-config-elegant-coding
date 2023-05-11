@@ -1,19 +1,15 @@
 const rule =
 {
-  // Descending
   'no-descending-specificity': true,
-  // Duplicate
   'declaration-block-no-duplicate-custom-properties': true,
   'declaration-block-no-duplicate-properties': true,
   'font-family-no-duplicate-names': true,
   'keyframe-block-no-duplicate-selectors': true,
   'no-duplicate-at-import-rules': true,
   'no-duplicate-selectors': true,
-  // Empty
   'block-no-empty': true,
   'comment-no-empty': true,
   'no-empty-source': true,
-  // invalid
   'color-no-invalid-hex': true,
   'function-calc-no-unspaced-operator': true,
   'keyframe-declaration-no-important': true,
@@ -21,18 +17,12 @@ const rule =
   'no-invalid-double-slash-comments': true,
   'no-invalid-position-at-import-rule': true,
   'string-no-newline': true,
-  // Irregular
   'no-irregular-whitespace': true,
-  // Missing
   'custom-property-no-missing-var-function': true,
-  'font-family-no-missing-generic-family-keyword': true,
-  // Non-standard
+  'font-family-no-missing-generic-family-keyword': null,
   'function-linear-gradient-no-nonstandard-direction': true,
-  // Overrides
   'declaration-block-no-shorthand-property-overrides': true,
-  // Unmatchable
   'selector-anb-no-unmatchable': true,
-  // Unknown
   'annotation-no-unknown': true,
   'at-rule-no-unknown': true,
   'declaration-property-value-no-unknown': null,
@@ -44,10 +34,6 @@ const rule =
   'selector-pseudo-element-no-unknown': true,
   'selector-type-no-unknown': true,
   'unit-no-unknown': true,
-  /*
-   *  Enforce conventions
-   *  Allowed, disallowed & required
-   */
   'at-rule-disallowed-list': ['debug'],
   'at-rule-no-vendor-prefix': true,
   'color-hex-alpha': 'never',
@@ -66,11 +52,9 @@ const rule =
   ],
   'selector-no-vendor-prefix': true,
   'value-no-vendor-prefix': true,
-  // Case
   'function-name-case': 'lower',
   'selector-type-case': 'lower',
   'value-keyword-case': 'lower',
-  // Empty lines
   'rule-empty-line-before': [
     'always-multi-line',
     {
