@@ -51,14 +51,14 @@
     "postcss": "^8.4.24",
     "postcss-scss": "^4.0.6",
     "stylelint-order": "^6.0.3",
-    "stylelint-scss": "^5.0.1"
+    "stylelint-scss": "^5.0.1",
+    "stylelint-a11y": "^1.2.3"
   },
   "devDependencies": {
     "eslint": "^8.39.0",
     "eslint-config-aesthetic-coder": "^1.0.4",
     "rimraf": "^5.0.1",
-    "stylelint": "^15.5.0",
-    "stylelint-a11y": "^1.2.3"
+    "stylelint": "^15.5.0"
   },
   "peerDependencies": {
     "stylelint": "^15.5.0"
