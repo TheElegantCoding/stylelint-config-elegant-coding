@@ -1,0 +1,13 @@
+.github
+.vscode
+.editorconfig
+.eslintrc
+.gitignore
+.gitattributes
+
+node_modules
+src
+script
+
+CHANGELOG.md
+TODO.md

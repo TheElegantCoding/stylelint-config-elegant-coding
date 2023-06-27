@@ -102,4 +102,4 @@ const appearance =
   '-webkit-box-decoration-break'
 ];
 
-module.exports = { appearance };
+export { appearance };

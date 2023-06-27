@@ -35,6 +35,6 @@ const boxModel = [
   'padding-inline',
   'padding-inline-start',
   'padding-inline-end'
-]
+];
 
-module.exports = { boxModel };
+export { boxModel };

@@ -24,6 +24,6 @@ const positioning = [
   'offset-path',
   'offset-distance',
   'offset-rotate'
-]
+];
 
-module.exports = { positioning };
+export { positioning };

@@ -38,6 +38,6 @@ const svg = [
   'mask-type',
   'shape-rendering',
   'clip-rule'
-]
+];
 
-module.exports = { svg };
+export { svg };

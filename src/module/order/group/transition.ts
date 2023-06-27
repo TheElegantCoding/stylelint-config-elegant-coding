@@ -13,6 +13,6 @@ const transition = [
   'animation-delay',
   'animation-iteration-count',
   'animation-direction'
-]
+];
 
-module.exports = { transition };
+export { transition };

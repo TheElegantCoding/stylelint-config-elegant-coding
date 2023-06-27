@@ -79,6 +79,6 @@ const typography = [
   'ascent-override',
   'descent-override',
   'line-gap-override'
-]
+];
 
-module.exports = { typography };
+export { typography };

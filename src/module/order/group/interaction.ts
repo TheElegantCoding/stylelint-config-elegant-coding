@@ -54,6 +54,6 @@ const interaction = [
   'contain-intrinsic-block-size',
   'speak',
   'speak-as'
-]
+];
 
-module.exports = { interaction };
+export { interaction };

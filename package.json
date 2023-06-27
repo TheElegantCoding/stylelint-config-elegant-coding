@@ -1,6 +1,6 @@
 {
-  "name": "stylelint-config-coder-dev",
-  "version": "1.0.9",
+  "name": "stylelint-config-aesthetic-cooder",
+  "version": "0.0.1",
   "description": "My personal stylelint configuration",
   "author": "Luis Monsalve",
   "license": "MIT",
@@ -10,18 +10,30 @@
     "stylelint-order",
     "order"
   ],
-  "homepage": "https://github.com/LuisCoderDev/stylelint_coder_dev",
+  "homepage": "https://github.com/AesthetiCoder/stylelint_coder_dev",
   "bugs": {
-    "url": "https://github.com/LuisCoderDev/stylelint_coder_dev/issues"
+    "url": "https://github.com/AesthetiCoder/stylelint_coder_dev/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LuisCoderDev/stylelint_coder_dev.git"
+    "url": "git+https://github.com/AesthetiCoder/stylelint_coder_dev.git"
   },
-  "main": "src/index.js",
   "files": [
-    "src/**/*.js"
+    "./dist"
   ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./sass": {
+      "require": "./dist/sass.js",
+      "import": "./dist/sass.mjs",
+      "types": "./dist/sass.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
   "engines": {
     "node": "^18.16.0",
     "npm": "please-use-pnpm",
@@ -31,15 +43,22 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "postinstall": "git config core.hooksPath ./script/git_hook",
-    "lint": "eslint --ext .js . --fix"
+    "lint": "eslint --ext .js, .ts . --fix",
+    "build": "rimraf dist && tsc",
+    "type-check": "tsc --pretty --noEmit"
   },
   "dependencies": {
-    "eslint-config-coder-dev": "^0.0.6",
-    "stylelint-order": "^6.0.3"
+    "postcss": "^8.4.24",
+    "postcss-scss": "^4.0.6",
+    "stylelint-order": "^6.0.3",
+    "stylelint-scss": "^5.0.1"
   },
   "devDependencies": {
     "eslint": "^8.39.0",
-    "stylelint": "^15.5.0"
+    "eslint-config-aesthetic-coder": "^1.0.4",
+    "rimraf": "^5.0.1",
+    "stylelint": "^15.5.0",
+    "stylelint-a11y": "^1.2.3"
   },
   "peerDependencies": {
     "stylelint": "^15.5.0"

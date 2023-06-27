@@ -77,6 +77,6 @@ const layout = [
   'shape-outside',
   'shape-image-threshold',
   'shape-margin'
-]
+];
 
-module.exports = { layout };
+export { layout };
