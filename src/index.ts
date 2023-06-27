@@ -5,10 +5,9 @@ import { disabledRule } from './module/stylelint/rule/disabled_rule';
 
 const base =
 {
-  plugins: {
-    ...order.plugins,
-    ...a11y.plugins
-  },
+  plugins: [
+    ...order.plugins, ...a11y.plugins
+  ],
   rules: {
     ...disabledRule,
     ...generalRule,

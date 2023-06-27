@@ -1,4 +1,4 @@
-const a11ygeneralRule =
+const a11yGeneralRule =
 {
   'a11y/no-spread-text': true,
   'a11y/no-outline-none': true,
@@ -14,4 +14,4 @@ const a11ygeneralRule =
   'a11y/line-height-is-vertical-rhythmed': true
 };
 
-export { a11ygeneralRule };
+export { a11yGeneralRule };
