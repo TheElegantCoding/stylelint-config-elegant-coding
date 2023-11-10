@@ -1,5 +1,5 @@
-import { sassGeneralRule } from './module/sass/rule/sass_general_rule';
 import { sassDisabledRule } from './module/sass/rule/sass_disabled_rule';
+import { sassGeneralRule } from './module/sass/rule/sass_general_rule';
 
 const sass =
 {

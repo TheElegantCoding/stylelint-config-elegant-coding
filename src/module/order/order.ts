@@ -1,11 +1,11 @@
-import { svg } from './group/svg';
-import { layout } from './group/layout';
-import { boxModel } from './group/box_model';
-import { typography } from './group/typography';
 import { appearance } from './group/appearance';
-import { transition } from './group/transition';
+import { boxModel } from './group/box_model';
 import { interaction } from './group/interaction';
+import { layout } from './group/layout';
 import { positioning } from './group/positioning';
+import { svg } from './group/svg';
+import { transition } from './group/transition';
+import { typography } from './group/typography';
 
 const propertyGroups = [
   [ 'composes' ],
@@ -21,47 +21,47 @@ const propertyGroups = [
 ];
 
 const propertiesOrder = propertyGroups.map((properties) => ({
-  properties,
   emptyLineBefore: 'never',
-  noEmptyLineBetween: true
+  noEmptyLineBetween: true,
+  properties
 }));
 
 const order = {
   plugins: [ 'stylelint-order' ],
   rules: {
-    'order/properties-order': [
-      propertiesOrder,
-      {
-        severity: 'warning',
-        unspecified: 'bottomAlphabetical',
-        emptyLineBeforeUnspecified: 'always',
-        emptyLineMinimumPropertyThreshold: 5
-      }
-    ],
     'order/order': [
       [
         { name: 'import', type: 'at-rule' },
-        { type: 'at-rule', name: 'forward' },
+        { name: 'forward', type: 'at-rule' },
         { name: 'use', type: 'at-rule' },
         'dollar-variables',
         'at-variables',
         'custom-properties',
-        { type: 'at-rule', name: 'custom-media' },
-        { type: 'at-rule', name: 'function' },
+        { name: 'custom-media', type: 'at-rule' },
+        { name: 'function', type: 'at-rule' },
         { name: 'mixin', type: 'at-rule' },
         { name: 'extend', type: 'at-rule' },
-        { type: 'at-rule', name: 'include' },
+        { name: 'include', type: 'at-rule' },
         'declarations',
         {
-          type: 'rule',
           hasBlock: true,
-          selector: /^&::[\w-]+/u
+          selector: /^&::[\w-]+/u,
+          type: 'rule'
         },
         'rules',
-        { name: 'media', hasBlock: true, type: 'at-rule' }
+        { hasBlock: true, name: 'media', type: 'at-rule' }
       ],
       {
         severity: 'warning'
+      }
+    ],
+    'order/properties-order': [
+      propertiesOrder,
+      {
+        emptyLineBeforeUnspecified: 'always',
+        emptyLineMinimumPropertyThreshold: 5,
+        severity: 'warning',
+        unspecified: 'bottomAlphabetical'
       }
     ]
   }

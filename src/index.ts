@@ -1,7 +1,7 @@
 import { a11y } from './module/a11y/a11y';
 import { order } from './module/order/order';
-import { generalRule } from './module/stylelint/rule/general_rule';
 import { disabledRule } from './module/stylelint/rule/disabled_rule';
+import { generalRule } from './module/stylelint/rule/general_rule';
 
 const base =
 {
