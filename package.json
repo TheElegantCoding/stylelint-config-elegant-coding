@@ -1,23 +1,22 @@
 {
-  "name": "stylelint-config-aesthetic-coder",
-  "version": "2.0.2",
-  "description": "My personal stylelint configuration",
-  "author": "Luis Monsalve",
+  "name": "stylelint-config-elegant-coding",
+  "version": "3.0.0",
+  "description": "⚙️ Stylelint configuration for fix errors before they cause problems in your code. It can also help you to develop good coding habits that will make your code easier to maintain in the long run.",
+  "author": "Luis Monsalve <TheElegantCoding>",
   "license": "MIT",
   "keywords": [
+    "clean-architecture",
+    "clean-code",
+    "performance",
+    "style-guide",
+    "design-system",
+    "typescript",
+    "node",
+    "stylelint-rules",
+    "eslint",
     "stylelint",
-    "stylelint-config",
-    "stylelint-order",
-    "order"
+    "pnpm"
   ],
-  "homepage": "https://github.com/AesthetiCoder/stylelint_coder_dev",
-  "bugs": {
-    "url": "https://github.com/AesthetiCoder/stylelint_coder_dev/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AesthetiCoder/stylelint_coder_dev.git"
-  },
   "files": [
     "./dist"
   ],
@@ -50,13 +49,14 @@
   "dependencies": {
     "postcss": "8.4.31",
     "postcss-scss": "4.0.9",
+    "stylelint-a11y": "1.2.3",
+    "stylelint-codeguide": "0.3.2",
     "stylelint-order": "6.0.3",
-    "stylelint-scss": "5.3.1",
-    "stylelint-a11y": "1.2.3"
+    "stylelint-scss": "5.3.1"
   },
   "devDependencies": {
-    "eslint": "8.53.0",
-    "eslint-config-aesthetic-coder": "2.0.10",
+    "eslint": "8.54.0",
+    "eslint-config-elegant-coding": "3.0.6",
     "rimraf": "5.0.5",
     "stylelint": "15.11.0"
   },

@@ -1,14 +1,14 @@
-const generalRule =
-{
+const generalRule = {
   'alpha-value-notation': 'number',
   'annotation-no-unknown': true,
   'at-rule-disallowed-list': [ 'debug' ],
+  'at-rule-empty-line-before': 'never',
   'at-rule-no-unknown': true,
   'at-rule-no-vendor-prefix': true,
   'block-no-empty': true,
   'color-function-notation': 'legacy',
   'color-hex-alpha': 'never',
-  'color-hex-length': 'long',
+  'color-hex-length': 'short',
   'color-named': 'never',
   'color-no-invalid-hex': true,
   'comment-empty-line-before': 'never',
@@ -18,6 +18,7 @@ const generalRule =
   'custom-property-no-missing-var-function': true,
   'declaration-block-no-duplicate-custom-properties': true,
   'declaration-block-no-duplicate-properties': true,
+  'declaration-block-no-redundant-longhand-properties': true,
   'declaration-block-no-shorthand-property-overrides': true,
   'declaration-block-single-line-max-declarations': 1,
   'declaration-empty-line-before': [
@@ -30,6 +31,7 @@ const generalRule =
   'declaration-no-important': true,
   'font-family-name-quotes': 'always-unless-keyword',
   'font-family-no-duplicate-names': true,
+  'font-weight-notation': [ 'numeric', { ignore: [ 'relative' ] }],
   'function-calc-no-unspaced-operator': true,
   'function-linear-gradient-no-nonstandard-direction': true,
   'function-name-case': 'lower',
@@ -42,22 +44,19 @@ const generalRule =
   'keyframe-declaration-no-important': true,
   'keyframe-selector-notation': 'percentage',
   'length-zero-no-unit': true,
-  'max-nesting-depth':
-    [
-      1,
-      {
-        ignoreAtRules: [
-          'pseudo-classes',
-          'each',
-          'media',
-          'supports',
-          'include'
-        ]
-      }
-    ],
+  'max-nesting-depth': [
+    1,
+    {
+      ignoreAtRules: [
+        'pseudo-classes', 'each', 'media', 'supports', 'include'
+      ]
+    }
+  ],
   'media-feature-name-no-unknown': true,
   'media-feature-name-no-vendor-prefix': true,
+  'media-feature-name-value-no-unknown': true,
   'media-feature-range-notation': 'prefix',
+  'media-query-no-invalid': true,
   'named-grid-areas-no-invalid': true,
   'no-descending-specificity': true,
   'no-duplicate-at-import-rules': true,
@@ -67,6 +66,7 @@ const generalRule =
   'no-invalid-position-at-import-rule': true,
   'no-irregular-whitespace': true,
   'no-unknown-animations': true,
+  'no-unknown-custom-properties': true,
   'number-max-precision': 2,
   'property-no-unknown': true,
   'property-no-vendor-prefix': true,
@@ -87,7 +87,7 @@ const generalRule =
   ],
   'selector-max-compound-selectors': 3,
   'selector-max-id': 0,
-  'selector-no-qualifying-type': [ true, { ignore: [ 'attribute' ] } ],
+  'selector-no-qualifying-type': [ true, { ignore: [ 'attribute' ] }],
   'selector-no-vendor-prefix': true,
   'selector-not-notation': 'complex',
   'selector-pseudo-class-no-unknown': true,

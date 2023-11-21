@@ -3,6 +3,12 @@
     "editorconfig.editorconfig",
     "stylelint.vscode-stylelint",
     "dbaeumer.vscode-eslint",
-    "syler.sass-indented"
+    "vunguyentuan.vscode-postcss",
+    "mrmlnc.vscode-scss",
+    "syler.sass-indented",
+    "pranaygp.vscode-css-peek",
+    "DavidAnson.vscode-markdownlint",
+    "christian-kohler.npm-intellisense",
+    "esbenp.prettier-vscode"
   ]
 }

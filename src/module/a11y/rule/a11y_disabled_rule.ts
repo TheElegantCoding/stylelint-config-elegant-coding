@@ -1,4 +1,3 @@
-/* eslint-disable unicorn/no-null */
 const a11yDisabledRule =
 {
   'a11y/content-property-no-static-value': null,

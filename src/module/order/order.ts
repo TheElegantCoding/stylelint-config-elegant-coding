@@ -31,17 +31,41 @@ const order = {
   rules: {
     'order/order': [
       [
-        { name: 'import', type: 'at-rule' },
-        { name: 'forward', type: 'at-rule' },
-        { name: 'use', type: 'at-rule' },
+        {
+          name: 'import',
+          type: 'at-rule'
+        },
+        {
+          name: 'forward',
+          type: 'at-rule'
+        },
+        {
+          name: 'use',
+          type: 'at-rule'
+        },
         'dollar-variables',
         'at-variables',
         'custom-properties',
-        { name: 'custom-media', type: 'at-rule' },
-        { name: 'function', type: 'at-rule' },
-        { name: 'mixin', type: 'at-rule' },
-        { name: 'extend', type: 'at-rule' },
-        { name: 'include', type: 'at-rule' },
+        {
+          name: 'custom-media',
+          type: 'at-rule'
+        },
+        {
+          name: 'function',
+          type: 'at-rule'
+        },
+        {
+          name: 'mixin',
+          type: 'at-rule'
+        },
+        {
+          name: 'extend',
+          type: 'at-rule'
+        },
+        {
+          name: 'include',
+          type: 'at-rule'
+        },
         'declarations',
         {
           hasBlock: true,
@@ -49,7 +73,11 @@ const order = {
           type: 'rule'
         },
         'rules',
-        { hasBlock: true, name: 'media', type: 'at-rule' }
+        {
+          hasBlock: true,
+          name: 'media',
+          type: 'at-rule'
+        }
       ],
       {
         severity: 'warning'

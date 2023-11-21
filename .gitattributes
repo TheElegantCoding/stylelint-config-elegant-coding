@@ -10,3 +10,4 @@
 *.scss eol=lf
 *.html eol=lf
 *.svg eol=lf
+*.sh eol=lf

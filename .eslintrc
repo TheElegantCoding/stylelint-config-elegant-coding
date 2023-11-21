@@ -1,7 +1,10 @@
 {
   "root": true,
   "extends": [
-    "aesthetic-coder",
-    "aesthetic-coder/typescript"
-  ]
+    "elegant-coding",
+    "elegant-coding/typescript"
+  ],
+  "rules": {
+    "unicorn/no-null": "off"
+  }
 }
