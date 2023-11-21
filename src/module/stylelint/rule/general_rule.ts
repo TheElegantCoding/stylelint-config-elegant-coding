@@ -2,7 +2,12 @@ const generalRule = {
   'alpha-value-notation': 'number',
   'annotation-no-unknown': true,
   'at-rule-disallowed-list': [ 'debug' ],
-  'at-rule-empty-line-before': 'never',
+  'at-rule-empty-line-before': [
+    'always',
+    {
+      ignore: [ 'after-comment', 'first-nested', 'inside-block' ]
+    }
+  ],
   'at-rule-no-unknown': true,
   'at-rule-no-vendor-prefix': true,
   'block-no-empty': true,

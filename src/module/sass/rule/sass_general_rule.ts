@@ -8,7 +8,7 @@ const sassGeneralRule =
   'scss/at-function-named-arguments': 'never',
   'scss/at-function-parentheses-space-before': 'never',
   'scss/at-function-pattern': '^[a-z]+([a-z0-9-]+[a-z0-9]+)?$',
-  'scss/at-if-closing-brace-space-after': 'always-intermediate',
+
   'scss/at-if-no-null': true,
   'scss/at-import-partial-extension-blacklist': [ 'scss' ],
   'scss/at-mixin-argumentless-call-parentheses': 'always',

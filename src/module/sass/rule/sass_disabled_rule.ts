@@ -3,6 +3,7 @@ const sassDisabledRule =
   'at-rule-no-unknown': null,
   'scss/at-else-empty-line-before': null,
   'scss/at-if-closing-brace-newline-after': null,
+  'scss/at-if-closing-brace-space-after': null,
   'scss/at-import-partial-extension-whitelist': null,
   'scss/at-mixin-named-arguments': null,
   'scss/at-rule-conditional-no-parentheses': null,

@@ -2,7 +2,6 @@ const codeGuideGeneralRule =
 {
   'codeguide/at-rule-name-case': 'lower',
   'codeguide/at-rule-name-newline-after': 'always-multi-line',
-  'codeguide/at-rule-name-space-after': 'always-single-line',
   'codeguide/at-rule-semicolon-newline-after': 'always',
   'codeguide/at-rule-semicolon-space-before': 'never',
   'codeguide/block-closing-brace-empty-line-before': 'never',
@@ -42,7 +41,6 @@ const codeGuideGeneralRule =
   'codeguide/no-empty-first-line': true,
   'codeguide/no-eol-whitespace': true,
   'codeguide/no-extra-semicolons': true,
-  'codeguide/no-missing-end-of-source-newline': true,
   'codeguide/number-leading-zero': 'always',
   'codeguide/number-no-trailing-zeros': true,
   'codeguide/property-case': 'lower',
@@ -54,7 +52,6 @@ const codeGuideGeneralRule =
   'codeguide/selector-descendant-combinator-no-non-space': true,
   'codeguide/selector-list-comma-newline-after': 'always-multi-line',
   'codeguide/selector-list-comma-newline-before': 'never-multi-line',
-  'codeguide/selector-list-comma-space-after': 'always',
   'codeguide/selector-list-comma-space-before': 'never',
   'codeguide/selector-max-empty-lines': 0,
   'codeguide/selector-pseudo-class-case': 'lower',
