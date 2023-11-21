@@ -5,7 +5,7 @@ const generalRule = {
   'at-rule-empty-line-before': [
     'always',
     {
-      ignore: [ 'after-comment', 'first-nested', 'inside-block' ]
+      ignore: [ 'after-comment', 'first-nested', 'inside-block', 'blockless-after-blockless' ]
     }
   ],
   'at-rule-no-unknown': true,

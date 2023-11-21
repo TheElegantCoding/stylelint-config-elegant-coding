@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-elegant-coding",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "⚙️ Stylelint configuration for fix errors before they cause problems in your code. It can also help you to develop good coding habits that will make your code easier to maintain in the long run.",
   "author": "Luis Monsalve <TheElegantCoding>",
   "license": "MIT",
