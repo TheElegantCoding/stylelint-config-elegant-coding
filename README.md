@@ -1,13 +1,5 @@
 # Stylelint personal configuration
 
-<div align="center">
-  <img
-    alt="stylelint"
-    src="./.github/asset/stylelint.svg"
-  />
-</div>
-<br/>
-
 🚨 Warning this repo has rules from bem architecture, but modified to fix my style guides rules.
 
 ## ⚡️ Requirements

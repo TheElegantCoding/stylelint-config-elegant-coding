@@ -1,14 +1,10 @@
 {
   "recommendations": [
-    "editorconfig.editorconfig",
     "stylelint.vscode-stylelint",
+    "editorconfig.editorconfig",
     "dbaeumer.vscode-eslint",
-    "vunguyentuan.vscode-postcss",
-    "mrmlnc.vscode-scss",
-    "syler.sass-indented",
-    "pranaygp.vscode-css-peek",
-    "DavidAnson.vscode-markdownlint",
-    "christian-kohler.npm-intellisense",
-    "esbenp.prettier-vscode"
+    "streetsidesoftware.code-spell-checker",
+    "streetsidesoftware.code-spell-checker-spanish",
+    "redhat.vscode-yaml"
   ]
 }

@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/no-null */
 const sassDisabledRule =
 {
   'at-rule-no-unknown': null,

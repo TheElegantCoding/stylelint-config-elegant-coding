@@ -1,13 +1,16 @@
+# configuration
 .github
 .vscode
 .editorconfig
-.eslintrc
 .gitignore
 .gitattributes
 
+# dependencies
 node_modules
-src
-script
 
+# source code
+src
+
+# markdown
 CHANGELOG.md
 TODO.md

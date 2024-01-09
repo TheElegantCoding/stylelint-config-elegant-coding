@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/no-null */
 const disabledRule =
 {
   'at-rule-allowed-list': null,

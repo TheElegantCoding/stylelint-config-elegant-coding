@@ -1,11 +1,11 @@
-import { appearance } from './group/appearance';
-import { boxModel } from './group/box_model';
-import { interaction } from './group/interaction';
-import { layout } from './group/layout';
-import { positioning } from './group/positioning';
-import { svg } from './group/svg';
-import { transition } from './group/transition';
-import { typography } from './group/typography';
+import { appearance } from '@module/order/group/appearance';
+import { boxModel } from '@module/order/group/box_model';
+import { interaction } from '@module/order/group/interaction';
+import { layout } from '@module/order/group/layout';
+import { positioning } from '@module/order/group/positioning';
+import { svg } from '@module/order/group/svg';
+import { transition } from '@module/order/group/transition';
+import { typography } from '@module/order/group/typography';
 
 const propertyGroups = [
   [ 'composes' ],

@@ -1,19 +1,17 @@
-import { a11y } from './module/a11y/a11y';
-import { codeGuide } from './module/code_guide/code_guide';
-import { order } from './module/order/order';
-import { disabledRule } from './module/stylelint/rule/disabled_rule';
-import { generalRule } from './module/stylelint/rule/general_rule';
+import { order } from '@module/order/order';
+import { disabledRule } from '@module/stylelint/rule/disabled_rule';
+import { generalRule } from '@module/stylelint/rule/general_rule';
+import { stylistic } from '@module/stylistic/stylistic';
 
 const base =
 {
-  plugins: [ ...order.plugins, ...a11y.plugins, ...codeGuide.plugins ],
+  plugins: [ ...order.plugins, ...stylistic.plugins ],
   rules: {
     ...disabledRule,
     ...generalRule,
     ...order.rules,
-    ...codeGuide.rules,
-    ...a11y.rules
+    ...stylistic.rules
   }
 };
 
-export = base;
+export default base;

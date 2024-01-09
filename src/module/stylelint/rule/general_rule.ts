@@ -49,6 +49,7 @@ const generalRule = {
   'keyframe-declaration-no-important': true,
   'keyframe-selector-notation': 'percentage',
   'length-zero-no-unit': true,
+  'lightness-notation': 'percentage',
   'max-nesting-depth': [
     1,
     {

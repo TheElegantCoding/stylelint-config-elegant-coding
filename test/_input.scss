@@ -13,7 +13,7 @@
 .input__text-left
 {
   @include responsive(phone)
-{
+  {
     font-size: $sm;
   }
 

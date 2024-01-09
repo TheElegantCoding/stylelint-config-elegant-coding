@@ -1,9 +1,8 @@
 {
   "name": "stylelint-config-elegant-coding",
-  "version": "3.0.3",
   "description": "⚙️ Stylelint configuration for fix errors before they cause problems in your code. It can also help you to develop good coding habits that will make your code easier to maintain in the long run.",
   "author": "Luis Monsalve <TheElegantCoding>",
-  "license": "MIT",
+  "version": "4.0.0",
   "keywords": [
     "clean-architecture",
     "clean-code",
@@ -17,49 +16,51 @@
     "stylelint",
     "pnpm"
   ],
-  "files": [
-    "./dist"
-  ],
+  "type": "module",
   "exports": {
     ".": {
-      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     },
     "./sass": {
-      "require": "./dist/sass.js",
+      "types": "./dist/sass.d.ts",
       "import": "./dist/sass.mjs",
-      "types": "./dist/sass.d.ts"
-    },
-    "./package.json": "./package.json"
+      "require": "./dist/sass.js"
+    }
   },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [ "./dist" ],
   "engines": {
+    "node": ">=18.12.0",
     "npm": "please-use-pnpm",
     "yarn": "please-use-pnpm",
     "pnpm": ">=8.2.0"
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "postinstall": "git config core.hooksPath ./script/git_hook",
-    "lint": "eslint --ext .js, .ts . --fix",
-    "build": "rimraf dist && tsc",
-    "type-check": "tsc --pretty --noEmit"
-  },
-  "dependencies": {
-    "postcss": "8.4.31",
-    "postcss-scss": "4.0.9",
-    "stylelint-a11y": "1.2.3",
-    "stylelint-codeguide": "0.3.2",
-    "stylelint-order": "6.0.3",
-    "stylelint-scss": "5.3.1"
-  },
-  "devDependencies": {
-    "eslint": "8.54.0",
-    "eslint-config-elegant-coding": "3.0.6",
-    "rimraf": "5.0.5",
-    "stylelint": "15.11.0"
+    "build": "tsup --format esm,cjs --clean --dts",
+    "dev": "tsup src/index.ts --format esm,cjs --watch",
+    "type-check": "tsc --pretty --noEmit",
+    "lint": "pnpm lint-eslint",
+    "lint-eslint": "eslint . --fix "
   },
   "peerDependencies": {
-    "stylelint": "15.11.0"
+    "stylelint": "16.1.0"
+  },
+  "dependencies": {
+    "@stylistic/stylelint-plugin": "2.0.0",
+    "postcss": "8.4.33",
+    "postcss-scss": "4.0.9",
+    "stylelint-order": "6.0.4",
+    "stylelint-scss": "6.0.0"
+  },
+  "devDependencies": {
+    "eslint": "8.56.0",
+    "eslint-config-elegant-coding": "6.0.2",
+    "rimraf": "5.0.5",
+    "stylelint": "16.1.0",
+    "tsup": "8.0.1"
   }
 }
