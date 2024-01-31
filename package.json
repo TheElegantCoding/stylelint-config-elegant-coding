@@ -2,7 +2,7 @@
   "name": "stylelint-config-elegant-coding",
   "description": "⚙️ Stylelint configuration for fix errors before they cause problems in your code. It can also help you to develop good coding habits that will make your code easier to maintain in the long run.",
   "author": "Luis Monsalve <TheElegantCoding>",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "keywords": [
     "clean-architecture",
     "clean-code",
@@ -58,7 +58,7 @@
   },
   "devDependencies": {
     "eslint": "8.56.0",
-    "eslint-config-elegant-coding": "6.0.2",
+    "eslint-config-elegant-coding": "6.0.9",
     "rimraf": "5.0.5",
     "stylelint": "16.1.0",
     "tsup": "8.0.1"

@@ -6,7 +6,8 @@ import { stylistic } from '@module/stylistic/stylistic';
 const base =
 {
   plugins: [ ...order.plugins, ...stylistic.plugins ],
-  rules: {
+  rules:
+  {
     ...disabledRule,
     ...generalRule,
     ...order.rules,

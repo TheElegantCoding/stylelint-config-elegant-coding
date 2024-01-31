@@ -5,7 +5,8 @@ const sass =
 {
   customSyntax: 'postcss-scss',
   plugins: [ 'stylelint-scss' ],
-  rules: {
+  rules:
+  {
     ...sassDisabledRule,
     ...sassGeneralRule
   }

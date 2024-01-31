@@ -1,8 +1,6 @@
 const sassGeneralRule =
 {
   'scss/at-each-key-value-single-line': true,
-  'scss/at-else-closing-brace-newline-after': 'always-last-in-chain',
-  'scss/at-else-closing-brace-space-after': 'always-intermediate',
   'scss/at-else-if-parentheses-space-before': 'never',
   'scss/at-extend-no-missing-placeholder': true,
   'scss/at-function-named-arguments': 'never',
