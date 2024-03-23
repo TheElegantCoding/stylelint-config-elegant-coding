@@ -24,6 +24,8 @@ const disabledRule =
   'media-feature-name-disallowed-list': null,
   'media-feature-name-unit-allowed-list': null,
   'media-feature-name-value-allowed-list': null,
+  'media-query-no-invalid': null,
+  'no-unknown-animations': null,
   'property-allowed-list': null,
   'property-disallowed-list': null,
   'rule-selector-property-disallowed-list': null,
