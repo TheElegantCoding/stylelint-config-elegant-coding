@@ -9,6 +9,7 @@ const sassGeneralRule =
   'scss/at-if-no-null': true,
   'scss/at-import-partial-extension-disallowed-list': [ 'scss' ],
   'scss/at-mixin-argumentless-call-parentheses': 'always',
+  'scss/at-mixin-no-risky-nesting-selector': true,
   'scss/at-mixin-parentheses-space-before': 'never',
   'scss/at-mixin-pattern': '^[a-z]+([a-z0-9-_]+[a-z0-9]+)?$',
   'scss/at-rule-no-unknown': true,
