@@ -18,9 +18,9 @@
 <br />
 
 <div align="center">
-  <img src="./asset/badget/stylelint_badget.svg" height="36px" />&nbsp;&nbsp;&nbsp;
-  <img src="./asset/badget/bun_badget.svg" height="36px" />&nbsp;&nbsp;&nbsp;
-  <img src="./asset/badget/github_badget.svg" height="36px" />
+  <img src="./asset/badget/stylelint_badget.svg" height="32px" />&nbsp;&nbsp;&nbsp;
+  <img src="./asset/badget/bun_badget.svg" height="32px" />&nbsp;&nbsp;&nbsp;
+  <img src="./asset/badget/github_badget.svg" height="32px" />
 </div>
 
 ---
