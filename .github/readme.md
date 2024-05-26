@@ -179,7 +179,7 @@ To use this plugin put in your repositorie you need to create an `.stylelintrc` 
 
 Extra settings that can be added in the same file.
 
-```json
+```js
 {
   "extends":
   [
