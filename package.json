@@ -2,8 +2,9 @@
   "name": "stylelint-config-elegant-coding",
   "description": "⚙️ Stylelint configuration for fix errors before they cause problems in your code. It can also help you to develop good coding habits that will make your code easier to maintain in the long run.",
   "author": "Luis Monsalve <TheElegantCoding>",
-  "version": "4.1.3",
-  "keywords": [
+  "version": "4.1.4",
+  "keywords":
+  [
     "clean-architecture",
     "clean-code",
     "performance",
@@ -17,13 +18,16 @@
     "pnpm"
   ],
   "type": "module",
-  "exports": {
-    ".": {
+  "exports":
+  {
+    ".":
+    {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
     },
-    "./sass": {
+    "./sass":
+    {
       "types": "./dist/sass.d.ts",
       "import": "./dist/sass.mjs",
       "require": "./dist/sass.js"
@@ -32,13 +36,15 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [ "./dist" ],
-  "engines": {
+  "engines":
+  {
     "node": ">=18.12.0",
     "npm": "please-use-pnpm",
     "yarn": "please-use-pnpm",
     "pnpm": ">=8.2.0"
   },
-  "scripts": {
+  "scripts":
+  {
     "preinstall": "npx only-allow bun",
     "build": "tsup --format esm,cjs --clean --dts",
     "dev": "tsup src/index.ts --format esm,cjs --watch",
@@ -46,21 +52,24 @@
     "lint": "pnpm lint-eslint",
     "lint-eslint": "eslint . --fix "
   },
-  "peerDependencies": {
-    "stylelint": ">=16.0.0"
+  "peerDependencies":
+  {
+    "stylelint": ">=16.6.1"
   },
-  "dependencies": {
+  "dependencies":
+  {
     "@stylistic/stylelint-plugin": "2.1.2",
-    "postcss": "8.4.38",
+    "postcss": "8.4.39",
     "postcss-scss": "4.0.9",
     "stylelint-order": "6.0.4",
-    "stylelint-scss": "6.3.0"
+    "stylelint-scss": "6.3.2"
   },
-  "devDependencies": {
-    "eslint": "8.57.0",
-    "eslint-config-elegant-coding": "8.1.0",
-    "rimraf": "5.0.7",
-    "stylelint": "16.5.0",
-    "tsup": "8.0.2"
+  "devDependencies":
+  {
+    "eslint": "9.6.0",
+    "eslint-config-elegant-coding": "9.0.0",
+    "rimraf": "5.0.8",
+    "stylelint": "16.6.1",
+    "tsup": "8.1.0"
   }
 }
