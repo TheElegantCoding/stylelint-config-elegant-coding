@@ -67,7 +67,7 @@
   "devDependencies":
   {
     "eslint": "9.6.0",
-    "eslint-config-elegant-coding": "9.0.0",
+    "eslint-config-elegant-coding": "9.0.4",
     "rimraf": "5.0.8",
     "stylelint": "16.6.1",
     "tsup": "8.1.0"
