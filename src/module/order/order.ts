@@ -1,3 +1,4 @@
+/* eslint-disable regex/require-unicode-sets-regexp */
 import { appearance } from '@module/order/group/appearance';
 import { boxModel } from '@module/order/group/box_model';
 import { interaction } from '@module/order/group/interaction';
