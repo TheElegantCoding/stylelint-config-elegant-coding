@@ -2,10 +2,17 @@ const generalRule = {
   'alpha-value-notation': 'number',
   'annotation-no-unknown': true,
   'at-rule-disallowed-list': [ 'debug' ],
-  'at-rule-empty-line-before': [
+  'at-rule-empty-line-before':
+  [
     'always',
     {
-      ignore: [ 'after-comment', 'first-nested', 'inside-block', 'blockless-after-blockless' ]
+      ignore:
+      [
+        'after-comment',
+        'first-nested',
+        'inside-block',
+        'blockless-after-blockless'
+      ]
     }
   ],
   'at-rule-no-unknown': true,
@@ -26,17 +33,17 @@ const generalRule = {
   'declaration-block-no-redundant-longhand-properties': true,
   'declaration-block-no-shorthand-property-overrides': true,
   'declaration-block-single-line-max-declarations': 1,
-  'declaration-empty-line-before': [
+  'declaration-empty-line-before':
+  [
     'always',
     {
       except: [ 'after-declaration', 'first-nested' ],
       ignore: [ 'after-comment', 'inside-single-line-block' ]
     }
   ],
-  'declaration-no-important': true,
   'font-family-name-quotes': 'always-unless-keyword',
   'font-family-no-duplicate-names': true,
-  'font-weight-notation': [ 'numeric', { ignore: [ 'relative' ] }],
+  'font-weight-notation': [ 'numeric', { ignore: [ 'relative' ] } ],
   'function-calc-no-unspaced-operator': true,
   'function-linear-gradient-no-nonstandard-direction': true,
   'function-name-case': 'lower',
@@ -50,11 +57,17 @@ const generalRule = {
   'keyframe-selector-notation': 'percentage',
   'length-zero-no-unit': true,
   'lightness-notation': 'percentage',
-  'max-nesting-depth': [
+  'max-nesting-depth':
+  [
     1,
     {
-      ignoreAtRules: [
-        'pseudo-classes', 'each', 'media', 'supports', 'include'
+      ignoreAtRules:
+      [
+        'pseudo-classes',
+        'each',
+        'media',
+        'supports',
+        'include'
       ]
     }
   ],
@@ -74,7 +87,8 @@ const generalRule = {
   'number-max-precision': 2,
   'property-no-unknown': true,
   'property-no-vendor-prefix': true,
-  'rule-empty-line-before': [
+  'rule-empty-line-before':
+  [
     'always-multi-line',
     {
       except: [ 'first-nested' ],
@@ -83,15 +97,16 @@ const generalRule = {
   ],
   'selector-anb-no-unmatchable': true,
   'selector-attribute-quotes': 'always',
-  'selector-class-pattern': [
-    '^[a-z0-9\\-_/]+$',
+  'selector-class-pattern':
+  [
+    String.raw `^[a-z0-9\-_/]+$`,
     {
       message: 'Selector should be written in lowercase with hyphens (selector-class-pattern)'
     }
   ],
   'selector-max-compound-selectors': 3,
   'selector-max-id': 0,
-  'selector-no-qualifying-type': [ true, { ignore: [ 'attribute' ] }],
+  'selector-no-qualifying-type': [ true, { ignore: [ 'attribute' ] } ],
   'selector-no-vendor-prefix': true,
   'selector-not-notation': 'complex',
   'selector-pseudo-class-no-unknown': true,

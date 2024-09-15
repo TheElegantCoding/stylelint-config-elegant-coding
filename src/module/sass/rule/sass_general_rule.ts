@@ -31,6 +31,7 @@ const sassGeneralRule =
   'scss/function-quote-no-quoted-strings-inside': true,
   'scss/function-unquote-no-unquoted-strings-inside': true,
   'scss/load-no-partial-leading-underscore': true,
+  'scss/load-partial-extension': 'nerver',
   'scss/no-duplicate-mixins': true,
   'scss/no-global-function-names': true,
   'scss/operator-no-unspaced': true,

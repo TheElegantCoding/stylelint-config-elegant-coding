@@ -8,6 +8,7 @@ const disabledRule =
   'comment-word-disallowed-list': null,
   'custom-media-pattern': null,
   'custom-property-pattern': null,
+  'declaration-no-important': null,
   'declaration-property-max-values': null,
   'declaration-property-unit-allowed-list': null,
   'declaration-property-unit-disallowed-list': null,

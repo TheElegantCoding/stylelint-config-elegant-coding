@@ -54,22 +54,22 @@
   },
   "peerDependencies":
   {
-    "stylelint": ">=16.6.1"
+    "stylelint": ">=16.9.0"
   },
   "dependencies":
   {
-    "@stylistic/stylelint-plugin": "2.1.2",
-    "postcss": "8.4.39",
+    "@stylistic/stylelint-plugin": "3.0.1",
+    "postcss": "8.4.47",
     "postcss-scss": "4.0.9",
     "stylelint-order": "6.0.4",
-    "stylelint-scss": "6.3.2"
+    "stylelint-scss": "6.6.0"
   },
   "devDependencies":
   {
-    "eslint": "9.6.0",
-    "eslint-config-elegant-coding": "9.0.4",
-    "rimraf": "5.0.8",
-    "stylelint": "16.6.1",
-    "tsup": "8.1.0"
+    "eslint": "9.10.0",
+    "eslint-config-elegant-coding": "9.1.8",
+    "rimraf": "6.0.1",
+    "stylelint": "16.9.0",
+    "tsup": "8.2.4"
   }
 }

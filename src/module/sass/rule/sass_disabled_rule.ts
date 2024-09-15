@@ -7,7 +7,6 @@ const sassDisabledRule =
   'scss/at-else-empty-line-before': null,
   'scss/at-if-closing-brace-newline-after': null,
   'scss/at-if-closing-brace-space-after': null,
-  'scss/at-import-partial-extension-allowed-list': null,
   'scss/at-mixin-named-arguments': null,
   'scss/at-rule-conditional-no-parentheses': null,
   'scss/comment-no-loud': null,
