@@ -17,7 +17,6 @@ const stylisticGeneralRule =
   '@stylistic/declaration-block-semicolon-space-after': 'always-single-line',
   '@stylistic/declaration-block-semicolon-space-before': 'never',
   '@stylistic/declaration-block-trailing-semicolon': 'always',
-  '@stylistic/declaration-colon-newline-after': null,
   '@stylistic/declaration-colon-space-after': 'always',
   '@stylistic/declaration-colon-space-before': 'never',
   '@stylistic/function-comma-newline-after': 'always-multi-line',
