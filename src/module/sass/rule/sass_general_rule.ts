@@ -12,7 +12,7 @@ const sassGeneralRule =
   'scss/at-mixin-no-risky-nesting-selector': true,
   'scss/at-mixin-parentheses-space-before': 'never',
   'scss/at-mixin-pattern': '^[a-z]+([a-z0-9-_]+[a-z0-9]+)?$',
-  'scss/at-rule-no-unknown': true,
+  'scss/at-rule-no-unknown': [ true, { ignoreAtRules: [ 'tailwind' ] } ],
   'scss/at-use-no-redundant-alias': true,
   'scss/at-use-no-unnamespaced': true,
   'scss/block-no-redundant-nesting': true,

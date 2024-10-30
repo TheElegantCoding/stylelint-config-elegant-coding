@@ -17,7 +17,7 @@ const stylisticGeneralRule =
   '@stylistic/declaration-block-semicolon-space-after': 'always-single-line',
   '@stylistic/declaration-block-semicolon-space-before': 'never',
   '@stylistic/declaration-block-trailing-semicolon': 'always',
-  '@stylistic/declaration-colon-newline-after': 'always-multi-line',
+  '@stylistic/declaration-colon-newline-after': null,
   '@stylistic/declaration-colon-space-after': 'always',
   '@stylistic/declaration-colon-space-before': 'never',
   '@stylistic/function-comma-newline-after': 'always-multi-line',
@@ -62,7 +62,7 @@ const stylisticGeneralRule =
   '@stylistic/unit-case': 'lower',
   '@stylistic/value-list-comma-newline-after': 'always-multi-line',
   '@stylistic/value-list-comma-newline-before': 'never-multi-line',
-  '@stylistic/value-list-comma-space-after': 'always',
+  '@stylistic/value-list-comma-space-after': 'always-single-line',
   '@stylistic/value-list-comma-space-before': 'never',
   '@stylistic/value-list-max-empty-lines': 0
 
