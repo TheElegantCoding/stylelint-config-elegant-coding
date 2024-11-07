@@ -1,7 +1,6 @@
 const stylisticGeneralRule =
 {
   '@stylistic/at-rule-name-case': 'lower',
-  '@stylistic/at-rule-name-newline-after': 'always-multi-line',
   '@stylistic/at-rule-semicolon-newline-after': 'always',
   '@stylistic/at-rule-semicolon-space-before': 'never',
   '@stylistic/block-closing-brace-empty-line-before': 'never',
