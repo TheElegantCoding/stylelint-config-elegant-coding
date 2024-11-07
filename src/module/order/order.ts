@@ -55,18 +55,6 @@ const order = {
           name: 'function',
           type: 'at-rule'
         },
-        {
-          name: 'mixin',
-          type: 'at-rule'
-        },
-        {
-          name: 'extend',
-          type: 'at-rule'
-        },
-        {
-          name: 'include',
-          type: 'at-rule'
-        },
         'declarations',
         {
           hasBlock: true,
@@ -78,13 +66,26 @@ const order = {
           hasBlock: true,
           name: 'media',
           type: 'at-rule'
+        },
+        {
+          name: 'mixin',
+          type: 'at-rule'
+        },
+        {
+          name: 'extend',
+          type: 'at-rule'
+        },
+        {
+          name: 'include',
+          type: 'at-rule'
         }
       ],
       {
         severity: 'warning'
       }
     ],
-    'order/properties-order': [
+    'order/properties-order':
+    [
       propertiesOrder,
       {
         emptyLineBeforeUnspecified: 'always',

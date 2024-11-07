@@ -1,22 +1,27 @@
 /* stylelint-disable @stylistic/max-line-length */
 .section-hero
 {
-  @include responsive(small_desktop)
-  {
-    flex-direction: row;
-    padding-top: $spacing_160;
-  }
-
   overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: $spacing_40;
   padding-top: $spacing_128;
   padding-bottom: $spacing_64;
+
+  @include responsive(small_desktop)
+  {
+    flex-direction: row;
+    padding-top: $spacing_160;
+  }
 }
 
 .section-hero__container
 {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing_40;
+  width: 100%;
+
   @include responsive(phone)
   {
     align-items: flex-start;
@@ -26,15 +31,13 @@
   {
     width: 50%;
   }
-
-  display: flex;
-  flex-direction: column;
-  gap: $spacing_40;
-  width: 100%;
 }
 
 .section-hero__title
 {
+  font-size: $h3;
+  line-height: 1;
+  letter-spacing: -$spacing_1;
   @include responsive(phone)
   {
     font-size: $h1;
@@ -51,10 +54,6 @@
   }
 
   @include font_weight(extra_bold);
-
-  font-size: $h3;
-  line-height: 1;
-  letter-spacing: -$spacing_1;
 }
 
 .section-hero__container-title
@@ -66,12 +65,11 @@
 
 .section-hero__description
 {
+  line-height: 1.5;
   @include responsive(tablet)
   {
     font-size: $h5;
   }
-
-  line-height: 1.5;
 }
 
 .section-hero__container-button
@@ -124,17 +122,6 @@
 
 .section-hero__container-image
 {
-  @include responsive(small_desktop)
-  {
-    max-width: 50rem;
-    margin-top: 0;
-  }
-
-  @include responsive(desktop)
-  {
-    max-width: 60rem;
-  }
-
   position: relative;
   width: 100%;
   max-width: 70rem;
@@ -143,12 +130,6 @@
 
   &::before
   {
-    @include responsive(tablet)
-    {
-      width: 75rem;
-      height: 75rem;
-    }
-
     content: '';
     position: absolute;
     z-index: -1;
@@ -158,6 +139,21 @@
     width: 55rem;
     height: 55rem;
     background: radial-gradient(100% 100% at 50% 50%, rgba($primary_500, 0.5) 0, rgba($primary_500, 0.1) 40%, rgba($white, 0) 50%);
+    @include responsive(tablet)
+    {
+      width: 75rem;
+      height: 75rem;
+    }
+  }
+  @include responsive(small_desktop)
+  {
+    max-width: 50rem;
+    margin-top: 0;
+  }
+
+  @include responsive(desktop)
+  {
+    max-width: 60rem;
   }
 }
 
@@ -169,12 +165,6 @@
 
 .section-hero__icon
 {
-  @include responsive(small_tablet)
-  {
-    width: $spacing_128;
-    height: $spacing_128;
-  }
-
   position: absolute;
   top: 0;
   left: 0;
@@ -182,6 +172,11 @@
   height: $spacing_96;
   margin-top: -$spacing_56;
   fill: transparent;
+  @include responsive(small_tablet)
+  {
+    width: $spacing_128;
+    height: $spacing_128;
+  }
 }
 
 .section-hero__container-rating
@@ -205,33 +200,25 @@
 
 .section-hero__star
 {
+  fill: $warning_400;
   @include responsive(desktop)
   {
     width: $spacing_44;
     height: $spacing_44;
   }
-
-  fill: $warning_400;
 }
 
 .section-hero__text-rating
 {
+  font-size: $sm;
   @include responsive(desktop)
   {
     font-size: $h6;
   }
-
-  font-size: $sm;
 }
 
 .section-hero__underline
 {
-  @include responsive(desktop)
-  {
-    bottom: -$spacing_80;
-    width: 55rem;
-  }
-
   position: absolute;
   z-index: -1;
   bottom: -$spacing_64;
@@ -239,4 +226,9 @@
   transform: translateX(-50%);
   width: 35rem;
   opacity: 0.3;
+  @include responsive(desktop)
+  {
+    bottom: -$spacing_80;
+    width: 55rem;
+  }
 }
