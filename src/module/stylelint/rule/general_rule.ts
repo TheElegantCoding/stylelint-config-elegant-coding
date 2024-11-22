@@ -6,13 +6,8 @@ const generalRule = {
   [
     'always',
     {
-      ignore:
-      [
-        'after-comment',
-        'first-nested',
-        'inside-block',
-        'blockless-after-blockless'
-      ]
+      except: [ 'first-nested' ],
+      ignore: [ 'after-comment' ]
     }
   ],
   'at-rule-no-unknown': true,
@@ -26,7 +21,7 @@ const generalRule = {
   'comment-empty-line-before': 'never',
   'comment-no-empty': true,
   'comment-whitespace-inside': 'always',
-  'custom-property-empty-line-before': 'never',
+  'custom-property-empty-line-before': 'always',
   'custom-property-no-missing-var-function': true,
   'declaration-block-no-duplicate-custom-properties': true,
   'declaration-block-no-duplicate-properties': true,

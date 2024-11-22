@@ -29,8 +29,10 @@ const propertiesOrder = propertyGroups.map((properties) => ({
 
 const order = {
   plugins: [ 'stylelint-order' ],
-  rules: {
-    'order/order': [
+  rules:
+  {
+    'order/order':
+    [
       [
         {
           name: 'import',
@@ -76,6 +78,7 @@ const order = {
           type: 'at-rule'
         },
         {
+          hasBlock: true,
           name: 'include',
           type: 'at-rule'
         }

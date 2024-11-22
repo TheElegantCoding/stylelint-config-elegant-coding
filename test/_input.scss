@@ -38,6 +38,7 @@
   font-size: $h3;
   line-height: 1;
   letter-spacing: -$spacing_1;
+
   @include responsive(phone)
   {
     font-size: $h1;
@@ -66,6 +67,7 @@
 .section-hero__description
 {
   line-height: 1.5;
+
   @include responsive(tablet)
   {
     font-size: $h5;
@@ -139,12 +141,14 @@
     width: 55rem;
     height: 55rem;
     background: radial-gradient(100% 100% at 50% 50%, rgba($primary_500, 0.5) 0, rgba($primary_500, 0.1) 40%, rgba($white, 0) 50%);
+
     @include responsive(tablet)
     {
       width: 75rem;
       height: 75rem;
     }
   }
+
   @include responsive(small_desktop)
   {
     max-width: 50rem;
@@ -172,6 +176,7 @@
   height: $spacing_96;
   margin-top: -$spacing_56;
   fill: transparent;
+
   @include responsive(small_tablet)
   {
     width: $spacing_128;
@@ -201,6 +206,7 @@
 .section-hero__star
 {
   fill: $warning_400;
+
   @include responsive(desktop)
   {
     width: $spacing_44;
@@ -211,6 +217,7 @@
 .section-hero__text-rating
 {
   font-size: $sm;
+
   @include responsive(desktop)
   {
     font-size: $h6;
@@ -226,6 +233,7 @@
   transform: translateX(-50%);
   width: 35rem;
   opacity: 0.3;
+
   @include responsive(desktop)
   {
     bottom: -$spacing_80;
