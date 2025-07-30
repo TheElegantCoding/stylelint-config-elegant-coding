@@ -18,7 +18,8 @@ const propertyGroups = [
   typography,
   appearance,
   svg,
-  transition
+  transition,
+  [ 'include' ]
 ];
 
 const propertiesOrder = propertyGroups.map((properties) => ({
@@ -49,6 +50,7 @@ const order = {
         'dollar-variables',
         'at-variables',
         'custom-properties',
+        'declarations',
         {
           name: 'custom-media',
           type: 'at-rule'
@@ -57,13 +59,12 @@ const order = {
           name: 'function',
           type: 'at-rule'
         },
-        'declarations',
+
         {
           hasBlock: true,
           selector: /^&::[\w-]+/u,
           type: 'rule'
         },
-        'rules',
         {
           hasBlock: true,
           name: 'media',
@@ -78,10 +79,11 @@ const order = {
           type: 'at-rule'
         },
         {
-          hasBlock: true,
           name: 'include',
           type: 'at-rule'
-        }
+        },
+        'rules',
+        'at-rules'
       ],
       {
         severity: 'warning'

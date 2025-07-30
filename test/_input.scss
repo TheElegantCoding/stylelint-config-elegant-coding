@@ -39,6 +39,8 @@
   line-height: 1;
   letter-spacing: -$spacing_1;
 
+  @include font_weight(extra_bold);
+
   @include responsive(phone)
   {
     font-size: $h1;
@@ -53,8 +55,6 @@
   {
     font-size: $xl !important;
   }
-
-  @include font_weight(extra_bold);
 }
 
 .section-hero__container-title

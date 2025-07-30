@@ -2,12 +2,27 @@ const generalRule = {
   'alpha-value-notation': 'number',
   'annotation-no-unknown': true,
   'at-rule-disallowed-list': [ 'debug' ],
+  "declaration-property-value-keyword-no-deprecated": true,
+  "syntax-string-no-invalid": true,
+  'property-no-deprecated': true,
+  "color-function-alias-notation": "without-alpha",
+  "no-invalid-position-declaration": true,
+  'media-type-no-deprecated': true,
+  "nesting-selector-no-missing-scoping-root": true,
+  "block-no-redundant-nested-style-rules": true,
   'at-rule-empty-line-before':
   [
     'always',
     {
-      except: [ 'first-nested' ],
-      ignore: [ 'after-comment' ]
+      except:
+      [
+        'blockless-after-blockless'
+      ],
+      ignore:
+      [
+        'after-comment',
+        'first-nested'
+      ]
     }
   ],
   'at-rule-no-unknown': true,
