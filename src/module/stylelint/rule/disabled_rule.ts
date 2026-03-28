@@ -1,14 +1,9 @@
-/* eslint-disable unicorn/no-null */
-const disabledRule =
-{
+const disabledRule = {
   'at-rule-allowed-list': null,
   'at-rule-property-required-list': null,
   'color-no-hex': null,
   'comment-pattern': null,
   'comment-word-disallowed-list': null,
-  "at-rule-prelude-no-invalid": null,
-  "layer-name-pattern": null,
-  "at-rule-descriptor-no-unknown": null,
   'custom-media-pattern': null,
   'custom-property-pattern': null,
   'declaration-no-important': null,
