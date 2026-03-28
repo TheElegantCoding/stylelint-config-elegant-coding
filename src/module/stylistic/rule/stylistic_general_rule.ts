@@ -1,5 +1,4 @@
-const stylisticGeneralRule =
-{
+const stylisticGeneralRule = {
   '@stylistic/at-rule-name-case': 'lower',
   '@stylistic/at-rule-semicolon-newline-after': 'always',
   '@stylistic/at-rule-semicolon-space-before': 'never',
