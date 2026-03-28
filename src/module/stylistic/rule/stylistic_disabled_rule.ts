@@ -1,6 +1,4 @@
-/* eslint-disable unicorn/no-null */
-const stylisticDisabledRule =
-{
+const stylisticDisabledRule = {
   '@stylistic/at-rule-name-newline-after': null,
   '@stylistic/at-rule-name-space-after': null,
   '@stylistic/block-closing-brace-space-after': null,
