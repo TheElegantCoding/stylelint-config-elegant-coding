@@ -3,8 +3,7 @@
   "description": "⚙️ Stylelint configuration for fix errors before they cause problems in your code. It can also help you to develop good coding habits that will make your code easier to maintain in the long run.",
   "author": "Luis Monsalve <TheElegantCoding>",
   "version": "6.2.0",
-  "keywords":
-  [
+  "keywords": [
     "clean-architecture",
     "clean-code",
     "performance",
@@ -18,16 +17,13 @@
     "pnpm"
   ],
   "type": "module",
-  "exports":
-  {
-    ".":
-    {
+  "exports": {
+    ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
     },
-    "./sass":
-    {
+    "./sass": {
       "types": "./dist/sass.d.ts",
       "import": "./dist/sass.mjs",
       "require": "./dist/sass.js"
@@ -35,16 +31,14 @@
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": [ "./dist" ],
-  "engines":
-  {
+  "files": ["./dist"],
+  "engines": {
     "node": ">=18.12.0",
     "npm": "please-use-pnpm",
     "yarn": "please-use-pnpm",
     "pnpm": ">=8.2.0"
   },
-  "scripts":
-  {
+  "scripts": {
     "preinstall": "npx only-allow bun",
     "build": "tsup --format esm,cjs --clean --dts",
     "dev": "tsup src/index.ts --format esm,cjs --watch",
@@ -52,24 +46,20 @@
     "lint": "pnpm lint-eslint",
     "lint-eslint": "eslint . --fix "
   },
-  "peerDependencies":
-  {
-    "stylelint": ">=16.10.0"
+  "peerDependencies": {
+    "stylelint": ">=17.6.0"
   },
-  "dependencies":
-  {
-    "@stylistic/stylelint-plugin": "4.0.0",
-    "postcss": "8.5.6",
+  "dependencies": {
+    "@stylistic/stylelint-plugin": "5.1.0",
+    "postcss": "8.5.8",
     "postcss-scss": "4.0.9",
-    "stylelint-order": "7.0.0",
-    "stylelint-scss": "6.12.1"
+    "stylelint": "17.6.0",
+    "stylelint-order": "8.1.1",
+    "stylelint-scss": "7.0.0"
   },
-  "devDependencies":
-  {
-    "eslint": "9.32.0",
-    "eslint-config-elegant-coding": "9.11.0",
-    "rimraf": "6.0.1",
-    "stylelint": "16.23.0",
-    "tsup": "8.5.0"
+  "devDependencies": {
+    "eslint-config-universal-code": "^1.0.4",
+    "rimraf": "6.1.3",
+    "tsup": "8.5.1"
   }
 }
