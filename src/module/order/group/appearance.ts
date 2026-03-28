@@ -1,5 +1,4 @@
-const appearance =
-[
+const appearance = [
   'appearance',
   'visibility',
   'color-scheme',
