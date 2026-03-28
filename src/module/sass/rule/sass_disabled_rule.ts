@@ -1,6 +1,4 @@
-/* eslint-disable unicorn/no-null */
-const sassDisabledRule =
-{
+const sassDisabledRule = {
   'at-rule-no-unknown': null,
   'scss/at-else-closing-brace-newline-after': null,
   'scss/at-else-closing-brace-space-after': null,
