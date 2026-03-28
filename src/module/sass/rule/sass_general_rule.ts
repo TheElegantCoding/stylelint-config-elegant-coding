@@ -1,5 +1,4 @@
-const sassGeneralRule =
-{
+const sassGeneralRule = {
   'scss/at-each-key-value-single-line': true,
   'scss/at-else-if-parentheses-space-before': 'never',
   'scss/at-extend-no-missing-placeholder': true,
@@ -7,12 +6,12 @@ const sassGeneralRule =
   'scss/at-function-parentheses-space-before': 'never',
   'scss/at-function-pattern': '^[a-z]+([a-z0-9-]+[a-z0-9]+)?$',
   'scss/at-if-no-null': true,
-  'scss/at-import-partial-extension-disallowed-list': [ 'scss' ],
+  'scss/at-import-partial-extension-disallowed-list': ['scss'],
   'scss/at-mixin-argumentless-call-parentheses': 'always',
   'scss/at-mixin-no-risky-nesting-selector': true,
   'scss/at-mixin-parentheses-space-before': 'never',
   'scss/at-mixin-pattern': '^[a-z]+([a-z0-9-_]+[a-z0-9]+)?$',
-  'scss/at-rule-no-unknown': [ true, { ignoreAtRules: [ 'tailwind' ] } ],
+  'scss/at-rule-no-unknown': [true, { ignoreAtRules: ['tailwind'] }],
   'scss/at-use-no-redundant-alias': true,
   'scss/block-no-redundant-nesting': true,
   'scss/comment-no-empty': true,
