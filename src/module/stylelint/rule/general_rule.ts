@@ -1,30 +1,21 @@
 const generalRule = {
   'alpha-value-notation': 'number',
   'annotation-no-unknown': true,
-  'at-rule-disallowed-list': [ 'debug' ],
-  "declaration-property-value-keyword-no-deprecated": true,
-  "syntax-string-no-invalid": true,
+  'at-rule-disallowed-list': ['debug'],
+  'declaration-property-value-keyword-no-deprecated': true,
+  'syntax-string-no-invalid': true,
   'property-no-deprecated': true,
-  "color-function-alias-notation": "without-alpha",
-  "no-invalid-position-declaration": true,
+  'color-function-alias-notation': 'without-alpha',
+  'no-invalid-position-declaration': true,
   'media-type-no-deprecated': true,
-  "nesting-selector-no-missing-scoping-root": true,
-  "block-no-redundant-nested-style-rules": true,
-  'at-rule-empty-line-before':
-  [
-    'always',
-    {
-      except:
-      [
-        'blockless-after-blockless'
-      ],
-      ignore:
-      [
-        'after-comment',
-        'first-nested'
-      ]
-    }
-  ],
+  'nesting-selector-no-missing-scoping-root': true,
+  'block-no-redundant-nested-style-rules': true,
+  'at-rule-empty-line-before': ['always', {
+    except:
+      ['blockless-after-blockless'],
+    ignore:
+      ['after-comment', 'first-nested']
+  }],
   'at-rule-no-unknown': true,
   'at-rule-no-vendor-prefix': true,
   'block-no-empty': true,
@@ -43,17 +34,13 @@ const generalRule = {
   'declaration-block-no-redundant-longhand-properties': true,
   'declaration-block-no-shorthand-property-overrides': true,
   'declaration-block-single-line-max-declarations': 1,
-  'declaration-empty-line-before':
-  [
-    'always',
-    {
-      except: [ 'after-declaration', 'first-nested' ],
-      ignore: [ 'after-comment', 'inside-single-line-block' ]
-    }
-  ],
+  'declaration-empty-line-before': ['always', {
+    except: ['after-declaration', 'first-nested'],
+    ignore: ['after-comment', 'inside-single-line-block']
+  }],
   'font-family-name-quotes': 'always-unless-keyword',
   'font-family-no-duplicate-names': true,
-  'font-weight-notation': [ 'numeric', { ignore: [ 'relative' ] } ],
+  'font-weight-notation': ['numeric', { ignore: ['relative'] }],
   'function-calc-no-unspaced-operator': true,
   'function-linear-gradient-no-nonstandard-direction': true,
   'function-name-case': 'lower',
@@ -67,11 +54,8 @@ const generalRule = {
   'keyframe-selector-notation': 'percentage',
   'length-zero-no-unit': true,
   'lightness-notation': 'percentage',
-  'max-nesting-depth':
-  [
-    1,
-    {
-      ignoreAtRules:
+  'max-nesting-depth': [1, {
+    ignoreAtRules:
       [
         'pseudo-classes',
         'each',
@@ -79,8 +63,7 @@ const generalRule = {
         'supports',
         'include'
       ]
-    }
-  ],
+  }],
   'media-feature-name-no-unknown': true,
   'media-feature-name-no-vendor-prefix': true,
   'media-feature-name-value-no-unknown': true,
@@ -97,26 +80,18 @@ const generalRule = {
   'number-max-precision': 2,
   'property-no-unknown': true,
   'property-no-vendor-prefix': true,
-  'rule-empty-line-before':
-  [
-    'always-multi-line',
-    {
-      except: [ 'first-nested' ],
-      ignore: [ 'after-comment' ]
-    }
-  ],
+  'rule-empty-line-before': ['always-multi-line', {
+    except: ['first-nested'],
+    ignore: ['after-comment']
+  }],
   'selector-anb-no-unmatchable': true,
   'selector-attribute-quotes': 'always',
-  'selector-class-pattern':
-  [
-    String.raw `^[a-z0-9\-_/]+$`,
-    {
-      message: 'Selector should be written in lowercase with hyphens (selector-class-pattern)'
-    }
-  ],
+  'selector-class-pattern': [String.raw`^[a-z0-9\-_/]+$`, {
+    message: 'Selector should be written in lowercase with hyphens (selector-class-pattern)'
+  }],
   'selector-max-compound-selectors': 3,
   'selector-max-id': 0,
-  'selector-no-qualifying-type': [ true, { ignore: [ 'attribute' ] } ],
+  'selector-no-qualifying-type': [true, { ignore: ['attribute'] }],
   'selector-no-vendor-prefix': true,
   'selector-not-notation': 'complex',
   'selector-pseudo-class-no-unknown': true,
