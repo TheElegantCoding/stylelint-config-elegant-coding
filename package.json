@@ -2,7 +2,7 @@
   "name": "stylelint-config-universal-code",
   "description": "⚙️ Stylelint configuration for fix errors before they cause problems in your code. It can also help you to develop good coding habits that will make your code easier to maintain in the long run.",
   "author": "Luis Monsalve <TheElegantCoding>",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "keywords": [
     "clean-architecture",
     "clean-code",
@@ -21,23 +21,24 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
     },
     "./sass": {
       "types": "./dist/sass.d.ts",
       "import": "./dist/sass.mjs",
-      "require": "./dist/sass.js"
+      "require": "./dist/sass.js",
+      "default": "./dist/sass.js"
     }
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": ["./dist"],
   "engines": {
-    "node": ">=18.12.0",
-    "npm": "please-use-pnpm",
-    "yarn": "please-use-pnpm",
-    "pnpm": ">=8.2.0"
+    "node": ">=22.17.0",
+    "bun": ">=1.1.0"
   },
+
   "scripts": {
     "preinstall": "npx only-allow bun",
     "build": "tsup --format esm,cjs --clean --dts",
