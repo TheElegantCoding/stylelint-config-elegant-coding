@@ -2,7 +2,7 @@
   "name": "stylelint-config-universal-code",
   "description": "⚙️ Stylelint configuration for fix errors before they cause problems in your code. It can also help you to develop good coding habits that will make your code easier to maintain in the long run.",
   "author": "Luis Monsalve <TheElegantCoding>",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "keywords": [
     "clean-architecture",
     "clean-code",
@@ -41,11 +41,10 @@
 
   "scripts": {
     "preinstall": "npx only-allow bun",
-    "build": "tsup --format esm,cjs --clean --dts",
-    "dev": "tsup src/index.ts --format esm,cjs --watch",
+    "build": "tsup src/index.ts src/sass.ts --format esm,cjs --clean --dts",
+    "dev": "tsup src/index.ts src/sass.ts --format esm,cjs --watch",
     "type-check": "tsc --pretty --noEmit",
-    "lint": "pnpm lint-eslint",
-    "lint-eslint": "eslint . --fix "
+    "lint": "eslint . --fix"
   },
   "peerDependencies": {
     "stylelint": ">=17.6.0"
