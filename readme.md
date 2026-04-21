@@ -20,9 +20,9 @@
 <img src="./.github/asset/illustration/divider.svg" alt="divider" width="100%" />
 
 <div align="center">
-  <img src="./.github/asset/stylelint_badge.svg" height="32px" />&nbsp;&nbsp;&nbsp;
-  <img src="./.github/asset/bun_badge.svg" height="32px" />&nbsp;&nbsp;&nbsp;
-  <img src="./.github/asset/github_badge.svg" height="32px" />
+  <img src="./.github/asset/illustration/stylelint_badge.svg" height="32px" />&nbsp;&nbsp;&nbsp;
+  <img src="./.github/asset/illustration/bun_badge.svg" height="32px" />&nbsp;&nbsp;&nbsp;
+  <img src="./.github/asset/illustration/github_badge.svg" height="32px" />
 </div>
 
 <br />
