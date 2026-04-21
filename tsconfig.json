@@ -6,8 +6,8 @@
     "module": "ESNext",
     "moduleResolution": "node",
     "paths": {
-      "@global/*": [ "src/global/*" ],
-      "@module/*": [ "src/module/*" ]
+      "@global/*": ["src/global/*"],
+      "@module/*": ["src/module/*"]
     },
     "resolveJsonModule": true,
     "strict": true,
@@ -37,6 +37,6 @@
     "isolatedModules": true,
     "skipLibCheck": true
   },
-  "include": [ "**/*.ts", "**/*.js" ],
-  "exclude": [ "./node_modules/" ]
+  "include": ["**/*.ts", "**/*.js"],
+  "exclude": ["./node_modules/"]
 }
