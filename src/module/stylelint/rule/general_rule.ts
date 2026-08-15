@@ -31,8 +31,10 @@ const generalRule = {
   'custom-property-no-missing-var-function': true,
   'declaration-block-no-duplicate-custom-properties': true,
   'declaration-block-no-duplicate-properties': true,
+  'selector-no-invalid': true,
   'declaration-block-no-redundant-longhand-properties': true,
   'declaration-block-no-shorthand-property-overrides': true,
+  'selector-no-deprecated': true,
   'declaration-block-single-line-max-declarations': 1,
   'declaration-empty-line-before': ['always', {
     except: ['after-declaration', 'first-nested'],
