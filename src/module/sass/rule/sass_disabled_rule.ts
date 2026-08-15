@@ -1,5 +1,6 @@
 const sassDisabledRule = {
   'at-rule-no-unknown': null,
+  'selector-no-invalid': null,
   'scss/at-else-closing-brace-newline-after': null,
   'scss/at-else-closing-brace-space-after': null,
   'scss/at-else-empty-line-before': null,
