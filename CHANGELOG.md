@@ -16,6 +16,14 @@ The list of changes have the description - commit - author.
 
 ## Released
 
+## 🚀 Version [1.0.9] - 2026-08-15
+
+- **style:** format SCSS mixin for improved readability and consistency [`25190db`](https://github.com/TheElegantCoding/stylelint-config-elegant-coding/commit/25190db) by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- **style:** add 'selector-no-invalid' rule to enhance validation in SASS configuration [`f4b05c9`](https://github.com/TheElegantCoding/stylelint-config-elegant-coding/commit/f4b05c9) by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- **style:** add 'selector-no-invalid' and 'selector-no-deprecated' rules for improved validation [`5912abc`](https://github.com/TheElegantCoding/stylelint-config-elegant-coding/commit/5912abc) by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- **style:** update function comma rules for improved clarity and flexibility [`7e7e67d`](https://github.com/TheElegantCoding/stylelint-config-elegant-coding/commit/7e7e67d) by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+- **chore:** update dependencies and peerDependencies for improved compatibility [`104c4f7`](https://github.com/TheElegantCoding/stylelint-config-elegant-coding/commit/104c4f7) by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
+
 ## 🚀 Version [1.0.8] - 2026-05-17
 
 - **style:** toggle 'scss/function-no-unknown' rule for clarity in sass rules [`04a0fa4`](https://github.com/TheElegantCoding/stylelint-config-elegant-coding/commit/04a0fa4) by [`@TheElegantCoding`](https://github.com/TheElegantCoding)
